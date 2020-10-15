@@ -10,6 +10,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="prefs_file">com.proyecto.daily_food.PREFERENCE_FILE_KEY</string>
-    <string name="facebook_app_id">923441691480921</string> <string name="fb_login_protocol_scheme">fb923441691480921</string>
+    <string name="facebook_app_id">923441691480921</string>
+    <string name="fb_login_protocol_scheme">fb923441691480921</string>
 
 </resources>

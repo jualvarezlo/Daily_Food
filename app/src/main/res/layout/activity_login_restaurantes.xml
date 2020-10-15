@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AuthActivity">
+    tools:context=".LoginRestaurantes">
 
     <LinearLayout
         android:id="@+id/authLayout"
@@ -67,60 +67,9 @@
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
-        <Button
-            android:id="@+id/googleButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:drawableStart="@mipmap/google"
-            android:paddingStart="16dp"
-            android:text="Google"
-            android:textAlignment="textStart"
-            android:textColor="@android:color/black" />
-
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
-        <Button
-            android:id="@+id/facebookButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:drawableStart="@mipmap/facebook"
-            android:paddingStart="16dp"
-            android:text="Facebook"
-            android:textAlignment="textStart"
-            android:textColor="@android:color/black" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="40dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/orTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="ó"
-                android:textAlignment="center"
-                android:textSize="24sp" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="40dp" />
-
-            <Button
-                android:id="@+id/restaurantRButton"
-                android:layout_width="379dp"
-                android:layout_height="46dp"
-                android:text="INGRESO RESTAURANTE" />
-        </LinearLayout>
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
