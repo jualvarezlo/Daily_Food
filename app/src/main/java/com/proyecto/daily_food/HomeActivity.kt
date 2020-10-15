@@ -45,7 +45,7 @@ class HomeActivity : AppCompatActivity() {
             prefs.clear()
             prefs.apply()
 
-            if (provider == ProviderType.FACEBOOK.name){
+            if (provider == ProviderType.FACEBOOK.name  ){
                 LoginManager.getInstance().logOut()
             }
 

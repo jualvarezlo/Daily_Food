@@ -114,6 +114,8 @@ class AuthActivity : AppCompatActivity() {
                         showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
                     }else{
                         showAlert()
+
+
                     }
                 }
 
@@ -131,12 +133,18 @@ class AuthActivity : AppCompatActivity() {
                         showAlert()
                     }
                 }
-
             }
+            else {
+                showAlert()
+            }
+        }
+
+        restaurantRButton.setOnClickListener {
+            showLoginRestaurantes()
         }
     }
 
-    private fun showAlert(){
+    fun showAlert(){
 
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
@@ -154,6 +162,11 @@ class AuthActivity : AppCompatActivity() {
         }
         startActivity(homeIntent)
 
+    }
+
+    private fun showLoginRestaurantes(){
+        val loginRestaurantesIntent = Intent(this, LoginRestaurantes::class.java)
+        startActivity(loginRestaurantesIntent)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
